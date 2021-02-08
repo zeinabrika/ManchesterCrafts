@@ -1,0 +1,19 @@
+﻿@page
+@using ContosoCrafts.Components
+@model IndexModel
+@{
+    ViewData["Title"] = "";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Manchester Crafts</h1>
+    <p>See <a href="https://zeinab.co.uk/">My Website</a></p>
+</div>
+
+
+@(await Html.RenderComponentAsync<ProductList>(RenderMode.ServerPrerendered))
+
+
+
+
+<script src="_framework/blazor.server.js"></script>
